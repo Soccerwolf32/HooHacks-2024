@@ -1,10 +1,28 @@
 package com.example.fitfusionfriends;
 
+
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Button;
+import android.os.Bundle;
 
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity {
+
+    String name;
+    float height, weight;
+
+    EditText editName;
+    EditText editWeight;
+    EditText editHeight;
+
+    Button button;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
     static {
         System.loadLibrary("fitfusionfriends");
     }
