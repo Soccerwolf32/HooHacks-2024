@@ -1,19 +1,19 @@
 public class Boss {
     private final int MAX_LEVEL = 100;
-    private int level;
+    private int bossLevel;
 
     //This creates the boss and sets it's initial level to 5
     public Boss()
     {
-        level = 5;
+        bossLevel = 5;
     }
 
     //This levels the boss up by 5 levels each time it is defeated
     public void levelUp()
     {
-        if (level < MAX_LEVEL)
+        if (bossLevel < MAX_LEVEL)
         {
-            level += 5;
+            bossLevel += 5;
         }
         else
         {
@@ -24,8 +24,8 @@ public class Boss {
     //This method returns the Current Level of the boss
 
     //@return level of the boss
-    public int returnLevel()
+    public int getLevel()
     {
-        return this.level;
+        return this.bossLevel;
     }
 }

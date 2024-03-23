@@ -101,10 +101,20 @@ public class Friend {
     /**
         Levels up and sets new threshold when conditions are met
      */
-    public void levelUp(){
+    public void levelUp(Boss boss){
+        if (this.friendLevel <= 100)
+        {
+            //TODO - Ends the game, Player Wins (or something else)
+        }
         if(friendEXP > friendEXPThreshold){
             setFriendLevel(friendLevel + 1);
             setFriendEXPThreshold(friendEXPThreshold * THRESHOLD_MULTIPLIER);
+
+            if (this.friendLevel >= boss.getLevel())
+            {
+                //TODO - Does something to declare user beats the boss before leveling up the boss
+                boss.levelUp();
+            }
         }
     }
 }
