@@ -28,6 +28,7 @@ android {
     }
     buildFeatures {
         prefab = true
+        viewBinding = true
     }
     externalNativeBuild {
         cmake {
@@ -42,6 +43,9 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.games.activity)
+    implementation(libs.constraintlayout)
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
