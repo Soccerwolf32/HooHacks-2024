@@ -70,8 +70,8 @@ public class MainActivity extends GameActivity {
                 // Commit or apply the changes
                 editor.apply(); // Asynchronous
 
-//                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, MainGameScreen.class);
+                startActivity(intent);
             }
 
         });
