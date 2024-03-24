@@ -1,3 +1,5 @@
+import android.content.SharedPreferences;
+
 /**
  * Contains the data of the friend
  */
@@ -18,6 +20,8 @@ public class Friend {
     private final int MAX_FRIEND_LEVEL = 100;
     private final int MAX_FRIEND_EXP = 100;
     private final int THRESHOLD_MULTIPLIER = 2;
+
+    public static final String SHARED_PREFS = "sharedPrefs";
 
 
     public Friend(){
