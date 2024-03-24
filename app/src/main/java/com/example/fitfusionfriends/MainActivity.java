@@ -90,6 +90,9 @@ public class MainActivity extends GameActivity {
         Friend friend = gson.fromJson(json, Friend.class);
         if(friend == null){
             friend = new Friend();
+            json = gson.toJson(friend);
+            editor.putString(FRIEND_KEY, json);
+            editor.apply();
         }
 
 
