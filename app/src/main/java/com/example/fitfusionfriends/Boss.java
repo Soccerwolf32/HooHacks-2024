@@ -1,3 +1,5 @@
+package com.example.fitfusionfriends;
+
 public class Boss {
     private final int MAX_LEVEL = 100;
     private int bossLevel;

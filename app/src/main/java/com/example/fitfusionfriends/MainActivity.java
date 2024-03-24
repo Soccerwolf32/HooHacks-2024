@@ -9,6 +9,8 @@ import android.os.Bundle;
 
 import com.bumptech.glide.Glide;
 import com.google.androidgamesdk.GameActivity;
+import com.google.gson.Gson;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.Intent;
@@ -19,6 +21,7 @@ public class MainActivity extends GameActivity {
         System.loadLibrary("fitfusionfriends");
     }
     private static final String PREF_KEY = "my_pref";
+    private static final String FRIEND_KEY = "my_friend";
     private static final String KEY_HEIGHT = "height";
     private static final String KEY_WEIGHT = "weight";
     private static final String KEY_NAME = "name";
@@ -70,11 +73,25 @@ public class MainActivity extends GameActivity {
                 // Commit or apply the changes
                 editor.apply(); // Asynchronous
 
-//                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, MainGameScreen.class);
+                startActivity(intent);
             }
 
         });
+
+    }
+
+    public void createFriend(){
+        SharedPreferences sharedPreferences = getSharedPreferences(FRIEND_KEY, MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        Gson gson = new Gson();
+        String json = sharedPreferences.getString(FRIEND_KEY, null);
+        Friend friend = gson.fromJson(json, Friend.class);
+        if(friend == null){
+            friend = new Friend();
+        }
+
 
     }
 
