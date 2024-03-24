@@ -6,7 +6,7 @@ The goal of *Fit Fusion Friends* was to incentivise working out at home and keep
 
 ## Gameplay
 
-Fit Fusion Friends combines elements of Tamagatchi, Pokémon ©, and workout routine apps to keep you motivated to workout! Make sure you stay on track to grow your fitmigo and beat other monsters on your to your goal. 
+Fit Fusion Friends combines elements of Tamagotchi, Pokémon ©, and workout routine apps to keep you motivated to workout! Make sure you stay on track to grow your fitmigo and beat other monsters on your to your goal. 
 
 ## **Technology**
 
