@@ -1,3 +1,7 @@
+package com.example.fitfusionfriends;
+
+import com.example.fitfusionfriends.Boss;
+
 /**
  * Contains the data of the friend
  */
@@ -6,7 +10,7 @@ public class Friend {
     private int friendEXP;
     private int friendEXPThreshold;
 
-    private final int MAX_FRIEND_LEVEL = 100;
+    private final int MAX_FRIEND_LEVEL = 10;
     private final int MAX_FRIEND_EXP = 100;
     private final int THRESHOLD_MULTIPLIER = 2;
 
@@ -14,7 +18,7 @@ public class Friend {
     public Friend(){
         friendLevel = 1;
         friendEXP = 1;
-        friendEXPThreshold = 1;
+        friendEXPThreshold = 2;
     }
 
     public int getFriendLevel() {
