@@ -1,4 +1,5 @@
 # Fit Fusion Friends
+by Brandon Dapaah, Matthew Nguyen, Jeffrey Owusu, Gabrielle Wibisono 
 
 **Fit Fusion Friends** was our HooHacks 2024 submission in the *health* track.
 
