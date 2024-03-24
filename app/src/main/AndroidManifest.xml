@@ -23,13 +23,6 @@
 <!--            android:theme="@style/Theme.FitFusionFriends" />-->
         <activity
             android:name=".EnterWorkoutActivity"
-<<<<<<< HEAD
-            android:exported="false"
-            android:theme="@style/Theme.FitFusionFriends" />
-        <activity
-            android:name=".MainActivity2"
-=======
->>>>>>> origin
             android:exported="false"
             android:theme="@style/Theme.FitFusionFriends" />
         <activity
