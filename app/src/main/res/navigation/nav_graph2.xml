@@ -9,7 +9,15 @@
         android:id="@+id/First2Fragment"
         android:name="com.example.fitfusionfriends.First2Fragment"
         android:label="@string/first_fragment_label"
+<<<<<<< HEAD
         tools:layout="@layout/fragment_first2" >
+=======
+<<<<<<< HEAD
+        tools:layout="@layout/fragment_first2" >
+=======
+        tools:layout="@layout/fragment_first2">
+>>>>>>> main-game-screen
+>>>>>>> origin
 
         <action
             android:id="@+id/action_First2Fragment_to_Second2Fragment"
@@ -19,7 +27,15 @@
         android:id="@+id/Second2Fragment"
         android:name="com.example.fitfusionfriends.Second2Fragment"
         android:label="@string/second_fragment_label"
+<<<<<<< HEAD
         tools:layout="@layout/fragment_second2" >
+=======
+<<<<<<< HEAD
+        tools:layout="@layout/fragment_second2" >
+=======
+        tools:layout="@layout/fragment_second2">
+>>>>>>> main-game-screen
+>>>>>>> origin
 
         <action
             android:id="@+id/action_Second2Fragment_to_First2Fragment"
