@@ -79,6 +79,8 @@ public class MainActivity extends GameActivity {
 
         });
 
+        createFriend();
+
     }
 
     public void createFriend(){

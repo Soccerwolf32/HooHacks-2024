@@ -53,6 +53,8 @@ public class MainGameScreen extends AppCompatActivity {
         String json = sharedPreferences.getString(FRIEND_KEY, null);
         Gson gson = new Gson();
         Friend friend = gson.fromJson(json, Friend.class);
+        if(friend == null)
+            friend = new Friend();
         return friend.getFriendLevel();
     }
 
