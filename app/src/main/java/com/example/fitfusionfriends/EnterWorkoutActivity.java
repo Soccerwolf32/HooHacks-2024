@@ -34,10 +34,10 @@ public class EnterWorkoutActivity extends AppCompatActivity {
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /* int exp = collectData();
-                Intent intent = new Intent(EnterWorkoutActivity.this, );
+                int exp = collectData();
+                Intent intent = new Intent(EnterWorkoutActivity.this, MainGameScreen.class);
                 intent.putExtra("exp", exp);
-                startActivity(intent); */
+                startActivity(intent);
             }
         });
     }

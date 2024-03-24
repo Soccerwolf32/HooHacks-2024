@@ -32,6 +32,12 @@ public class MainGameScreen extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main_game_screen);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            int exp = extras.getInt("exp");
+            // TODO: update player exp
+        }
     }
 
 }
