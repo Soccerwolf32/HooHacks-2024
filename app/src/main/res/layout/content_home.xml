@@ -7,6 +7,18 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <ImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="124dp"
+        android:layout_height="144dp"
+        android:src="@drawable/gif_file1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="453dp"
         android:layout_height="676dp"
@@ -15,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751"
+        app:layout_constraintVertical_bias="0.606"
         app:srcCompat="@drawable/title_picture" />
 
     <EditText
@@ -30,20 +42,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396" />
-
-    <EditText
-        android:id="@+id/editWeight"
-        android:layout_width="230dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="316dp"
-        android:ems="10"
-        android:hint="Weight (lbs)"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.467" />
 
     <EditText
         android:id="@+id/editHeight"
@@ -51,16 +50,29 @@
         android:layout_height="48dp"
         android:ems="10"
         android:hint="Height (cm)"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467" />
+        app:layout_constraintVertical_bias="0.538" />
+
+    <EditText
+        android:id="@+id/editWeight"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="264dp"
+        android:ems="10"
+        android:hint="Weight (lbs)"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submitButton"
         android:layout_width="159dp"
         android:layout_height="70dp"
         android:layout_marginStart="161dp"
@@ -71,6 +83,6 @@
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editWeight"
-        app:layout_constraintVertical_bias="0.219" />
+        app:layout_constraintVertical_bias="0.41" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
