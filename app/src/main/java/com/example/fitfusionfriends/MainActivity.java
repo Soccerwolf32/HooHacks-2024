@@ -5,10 +5,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
 import android.os.Bundle;
+
+import com.bumptech.glide.Glide;
 import com.google.androidgamesdk.GameActivity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.Intent;
+import android.widget.ImageView;
 
 public class MainActivity extends GameActivity {
     static {
@@ -32,6 +35,12 @@ public class MainActivity extends GameActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_home);
+
+        ImageView imageView = findViewById(R.birdGif0);
+        Glide.with(this)
+                .load(R.drawable.birdGif0)
+                .into(imageView);
+
         // Get SharedPreferences instance
         SharedPreferences sharedPreferences = getSharedPreferences(PREF_KEY, Context.MODE_PRIVATE);
 

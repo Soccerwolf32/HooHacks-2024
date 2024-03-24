@@ -76,4 +76,8 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+
+    // Glide library (for gifs)
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
 }
