@@ -5,13 +5,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
 import android.os.Bundle;
-import android.widget.ImageView;
 import com.google.androidgamesdk.GameActivity;
 
 public class MainActivity extends GameActivity {
-
+    static {
+        System.loadLibrary("fitfusionfriends");
+    }
     String name;
-    int height, weight;
+    float height, weight;
 
     EditText editName;
     EditText editWeight;
@@ -33,17 +34,15 @@ public class MainActivity extends GameActivity {
             @Override
             public void onClick(View v) {
                 name = editName.getText().toString();
-                height = Integer.parseInt(editHeight.getText().toString());
-                weight = Integer.parseInt(editWeight.getText().toString());
+                height = Float.parseFloat(editHeight.getText().toString());
+                weight = Float.parseFloat(editWeight.getText().toString());
+
             }
         });
 
-        ImageView gifImageView = findViewById(R.id.gifImageView);
     }
 
-    static {
-        System.loadLibrary("fitfusionfriends");
-    }
+
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
