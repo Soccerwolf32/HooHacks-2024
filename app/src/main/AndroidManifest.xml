@@ -26,6 +26,10 @@
             android:exported="false"
             android:theme="@style/Theme.FitFusionFriends" />
         <activity
+            android:name=".MainGameScreen"
+            android:exported="false"
+            android:label="@string/title_activity_main_game_screen" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false"
             android:theme="@style/Theme.FitFusionFriends" />
