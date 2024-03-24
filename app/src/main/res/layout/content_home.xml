@@ -10,10 +10,10 @@
         android:id="@+id/imageView"
         android:layout_width="410dp"
         android:layout_height="200dp"
+        android:layout_marginStart="1dp"
         android:src="@drawable/title_pic"
         app:layout_constraintBottom_toTopOf="@+id/editName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.743" />
@@ -56,9 +56,10 @@
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/editWeight"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editName"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintVertical_bias="0.505" />
 
     <Button
         android:id="@+id/submitButton"
@@ -72,6 +73,6 @@
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editWeight"
-        app:layout_constraintVertical_bias="0.764" />
+        app:layout_constraintVertical_bias="0.168" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
