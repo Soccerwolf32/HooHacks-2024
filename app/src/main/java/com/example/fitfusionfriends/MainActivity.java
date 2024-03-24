@@ -42,7 +42,7 @@ public class MainActivity extends GameActivity {
 
         ImageView imageView = findViewById(R.id.gif_image);
         Glide.with(this)
-                .load(R.drawable.bird_gif)
+                .load(R.drawable.bird_0)
                 .into(imageView);
 
         // Get SharedPreferences instance
