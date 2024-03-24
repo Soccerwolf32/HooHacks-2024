@@ -36,6 +36,7 @@ public class MainActivity extends GameActivity {
                 name = editName.getText().toString();
                 height = Float.parseFloat(editHeight.getText().toString());
                 weight = Float.parseFloat(editWeight.getText().toString());
+
             }
         });
 
