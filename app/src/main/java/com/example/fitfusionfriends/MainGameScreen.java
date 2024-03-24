@@ -28,6 +28,25 @@ public class MainGameScreen extends AppCompatActivity {
         binding = ActivityMainGameScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        ImageView imageView = findViewById(R.id.gif_imageFriend);
+        ImageView imageView2 = findViewById(R.id.gif_imageEnemy);
+
+        Glide.with(this)
+                .load(R.drawable.snake_0)
+                .into(imageView2);
+
+        if (progressValue >= 5) {
+            // If exp >= 5, be teenage bird
+            Glide.with(this)
+                    .load(R.drawable.bird_1)
+                    .into(imageView);
+        }
+        else {
+            // ELse be baby bird
+            Glide.with(this)
+                    .load(R.drawable.bird_0)
+                    .into(imageView);
+        }
         /* BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

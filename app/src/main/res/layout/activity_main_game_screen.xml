@@ -53,5 +53,29 @@
         app:layout_constraintVertical_bias="0.285"
         app:navGraph="@navigation/mobile_navigation" />
 
+    <ImageView
+        android:id="@+id/gif_imageFriend"
+        android:layout_width="219dp"
+        android:layout_height="219dp"
+        android:src="@drawable/bird_0"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        app:srcCompat="@drawable/bird_0" />
+
+    <ImageView
+        android:id="@+id/gif_imageEnemy"
+        android:layout_width="253dp"
+        android:layout_height="253dp"
+        android:src="@drawable/snake_0"
+        app:layout_constraintBottom_toTopOf="@+id/gif_imageFriend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131"
+        app:srcCompat="@drawable/snake_0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
