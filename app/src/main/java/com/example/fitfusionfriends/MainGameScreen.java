@@ -1,5 +1,6 @@
 package com.example.fitfusionfriends;
 
+import android.content.SharedPreferences;
 import android.media.Image;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -13,6 +14,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.example.fitfusionfriends.databinding.ActivityMainGameScreenBinding;
+import com.google.gson.Gson;
 
 public class MainGameScreen extends AppCompatActivity {
 
@@ -42,6 +44,15 @@ public class MainGameScreen extends AppCompatActivity {
         progressValue = 5;
 
         updateXpBarImage(xpBarImageView);
+    }
+    private int getFriendLevel(){
+        SharedPreferences sharedPreferences = getSharedPreferences(FRIEND_KEY, MODE_PRIVATE);
+        String json = sharedPreferences.getString(FRIEND_KEY, null);
+        Gson gson = new Gson();
+        Friend friend = gson.fromJson(json, Friend.class);
+        if(friend == null)
+            friend = new Friend();
+        return friend.getFriendLevel();
     }
 
     private void updateXpBarImage(ImageView imageView)
