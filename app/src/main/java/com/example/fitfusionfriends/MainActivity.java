@@ -8,8 +8,7 @@ import android.os.Bundle;
 import com.google.androidgamesdk.GameActivity;
 import android.content.Context;
 import android.content.SharedPreferences;
-
-import java.text.BreakIterator;
+import android.content.Intent;
 
 public class MainActivity extends GameActivity {
     static {
@@ -60,7 +59,11 @@ public class MainActivity extends GameActivity {
 
                 // Commit or apply the changes
                 editor.apply(); // Asynchronous
+
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(intent);
             }
+
         });
 
     }
