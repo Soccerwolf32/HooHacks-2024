@@ -97,12 +97,12 @@
         android:id="@+id/gif_image"
         android:layout_width="137dp"
         android:layout_height="117dp"
-        android:src="@drawable/bird_gif"
+        android:src="@drawable/bird_0"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/bird_gif" />
+        app:srcCompat="@drawable/bird_0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
